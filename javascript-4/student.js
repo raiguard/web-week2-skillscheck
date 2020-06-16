@@ -26,7 +26,7 @@ let me = {
   superHeroName: "Lord Explosion Murder",
   homeTown: "Saratoga Springs",
   superPowers: ["Swirly Blast", "Jet Brain", "Hypoglycemia"],
-  superPowerXP: Math.floor(Math.random() * 100) + 1,
+  superPowerXP: () => Math.floor(Math.random() * 100) + 1,
   profileImage: () => `https://randomuser.me/api/portraits/med/lego/${Math.floor(Math.random() * 10) + 1}.jpg`
 };
 
